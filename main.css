@@ -1,0 +1,137 @@
+/* Basic Styling */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+font-size: 0.85rem;
+color:#222;
+}
+
+button{
+    font-size: 1rem;
+    padding: 5px 20px;
+}
+
+/* content one styling */
+.content-1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+}
+
+.content-1 img{
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    flex: 1;
+
+}
+
+.content-1 p{
+   font-size: 1.4rem;
+   font-weight: bold;
+   flex: 1;
+}
+
+/* @media (max-width: 600px){
+    .content-1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 225px;
+        } 
+
+        .content-1 p{
+            text-align: left;
+            margin-top: 20px;
+            } 
+} */
+
+
+/* content two styling */
+
+.content-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.content-2 >div{
+padding: 10px;
+text-align: center;
+background-color: blanchedalmond;
+}
+
+.content-2 img{
+    width: 100%;
+    }
+
+.content-2 p{
+font-size: 1.2rem;
+margin-bottom: 7px;
+line-height: 1.4;
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: teal;
+    align-items: center;
+}
+
+.section p{
+color: #fff;
+font-size: 1.3rem;
+font-weight: bold;
+}
+
+.section button{
+   border: 0;
+   border-radius: 5em;
+    }
+
+    .section button:hover{
+        border: 1px solid #fff;
+        background-color: teal;
+        border-radius: 5em;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    
+.content-3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        }
+        
+        .content-3 img{
+            width: 400px;
+            height: 400px;
+            margin-right: 20px;
+            flex: 1;
+        
+        }
+        
+        .content-3 p{
+           font-size: 1.4rem;
+           font-weight: bold;
+           flex: 1;
+        }
+        
+       

@@ -1,0 +1,117 @@
+/* Basic Styling */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+p{
+font-size: 0.85rem;
+color:#222;
+}
+
+button{
+    font-size: 1rem;
+    padding: 5px 20px;
+}
+
+/* .container{
+    text-align: center;
+} */
+
+/* content one styling */
+.content-1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+}
+
+.content-1 img{
+    width: 400px;
+    height: 400px;
+    margin-right: 30px;
+
+}
+
+.content-1 p{
+   font-size: 1.4rem;
+   font-weight: bold;
+}
+
+@media (max-width: 600px){
+    .content-1{
+        flex-direction: column;
+        } 
+
+        .content-1 p{
+            text-align: left;
+            margin-top: 20px;
+            } 
+}
+
+
+/* content two styling */
+
+.content-2{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.content-2 >div{
+/* padding: 10px; */
+text-align: center;
+background-color: blanchedalmond;
+max-width: 230px;
+}
+
+.content-2 img{
+    width: 225px;
+    }
+
+    .content-2 p{
+    font-size: 1.2rem;
+    }
+
+.section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: teal;
+padding: 10px;
+margin-bottom: 0;
+}
+
+.section p{
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.section button{
+    border: 0;
+    font-size: 1.1rem;
+    border-radius: 5em;
+    transition: 0.3s;
+}
+
+.section button:hover{
+    background-color: teal;
+    color: #fff;
+    border-radius: 5em;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
